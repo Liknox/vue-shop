@@ -121,40 +121,7 @@ section,
 	cursor: pointer;
 	border-bottom: 1px solid #9aa4d6;
 	color: #4343aa;
-	&.linkWhite {
-		border-bottom: 1px solid #ffffff;
-		color: #ffffff;
-	}
-	&.linkFalse {
-		border-bottom: 1px solid #b53f3f;
-		color: #b53f3f;
-	}
-	&.linkTrue {
-		border-bottom: 1px solid #7bd782;
-		color: #7bd782;
-	}
 }
-
-label {
-	display: block;
-	font-size: 16px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-input {
-	padding: 16px 26px;
-	margin-bottom: 30px;
-	border-radius: 20px;
-}
-textarea {
-	padding: 30px 27px;
-	border-radius: 14px;
-}
-input,
-textarea {
-	width: 100%;
-}
-
 .navbar {
 	position: fixed;
 	top: 0;
@@ -164,9 +131,6 @@ textarea {
 	padding: 20px 0;
 	background-color: #ffffff;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-	&.logo {
-		font-size: 24px;
-	}
 }
 
 .navbar-content {
@@ -198,29 +162,6 @@ textarea {
 	}
 }
 
-.status {
-	margin-right: 10px;
-	&:before {
-		display: inline-block;
-		content: "\A";
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-	}
-	&.false {
-		color: #ff5722;
-		&:before {
-			background: #ff5722;
-		}
-	}
-	&.true {
-		color: #8bc34a;
-		&:before {
-			background: #8bc34a;
-		}
-	}
-}
-
 .title {
 	margin-bottom: 20px;
 	color: #333333;
@@ -235,14 +176,6 @@ textarea {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 30px;
-
-	// default btn
-	&.btnDefaul {
-		color: #ffffff;
-		border: 1px solid #333333;
-		background-color: #333333;
-	}
-
 	// primiry btn
 	&.btnPrimary {
 		color: #ffffff;
@@ -250,44 +183,9 @@ textarea {
 		background-color: #494ce8;
 	}
 
-	// danger btn
-	&.btnDanger {
-		color: #ffffff;
-		border: 1px solid hsl(0, 48%, 48%);
-		background-color: #b53f3f;
-	}
-
 	&.btnWhite {
 		color: #333333;
 		border: 1px solid #ffffff;
 		background-color: #ffffff;
-	}
-}
-
-// Default table
-table {
-	width: 100%;
-	line-height: 1.5em;
-	border-collapse: separate;
-	border-spacing: 0 34px;
-	thead th {
-		padding: 20px 22px;
-		white-space: nowrap;
-		font-size: 22px;
-		cursor: pointer;
-	}
-	td {
-		padding: 20px;
-	}
-	tbody tr {
-		background-color: #ffffff;
-		font-weight: 600;
-		transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-		box-shadow: 0 30px 30px rgba(0, 0, 0, 0.02);
-		&:hover {
-			box-shadow: 0 30px 30px rgba(0, 0, 0, 0.04);
-			transform: translate(0, -6px);
-			transition-delay: 0s !important;
-		}
 	}
 }
