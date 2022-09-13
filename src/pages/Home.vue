@@ -10,6 +10,7 @@
 						<li>Store and interact with data form Vuex</li>
 						<li>Diff btw actions and mutations</li>
 						<li>Working with the common state application</li>
+						<li>My<a class="github" href="https://github.com/Liknox" target="_blank"> Github </a>account</li>
 					</ul>
 					<img src="../assets/img/1.png" alt="" />
 					<div>
@@ -52,6 +53,11 @@
 		content: "\2013";
 		display: block;
 		margin-right: 0.625rem;
+	}
+	.github {
+		padding: 0 5px;
+		color: #494ce8;
+      font-weight: bold;
 	}
 }
 @media (max-width: 400px) {
