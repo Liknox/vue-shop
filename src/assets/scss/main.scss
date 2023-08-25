@@ -1,4 +1,3 @@
-// тк мы к ним обращаемся везде ниже
 @import "utils/vars";
 @import "utils/reset";
 
@@ -33,6 +32,7 @@ body {
 *:before,
 *:after {
 	box-sizing: border-box;
+   -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -156,7 +156,6 @@ section,
 .navbar-link {
 	display: block;
 	color: #aaaad5;
-	// active link
 	&.active {
 		color: #4343aa;
 	}
@@ -176,16 +175,30 @@ section,
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 30px;
-	// primiry btn
 	&.btnPrimary {
 		color: #ffffff;
 		border: 1px solid #494ce8;
 		background-color: #494ce8;
+      transition:
+			background-color 0.2s ease-in,
+			box-shadow 0.1s ease-out;
+		&:hover {
+			box-shadow: 0px 0px 35px 0px #5659ec;
+			background-color: #5659ec;
+		}
 	}
 
 	&.btnWhite {
 		color: #333333;
 		border: 1px solid #ffffff;
 		background-color: #ffffff;
+		transition:
+			background-color 0.2s ease-in,
+			box-shadow 0.1s ease-out;
+		&:hover {
+			box-shadow: 0px 0px 55px 5px rgba(230, 230, 230, 1);
+			background-color: #fbfbfb;
+			border: 1px solid #fbfbfb;
+		}
 	}
 }

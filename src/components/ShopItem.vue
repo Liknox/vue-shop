@@ -19,16 +19,17 @@ export default {
 </script>
 
 <style lang="scss">
-
 .link {
-   border-bottom: none !important;
+	border-bottom: none !important;
 }
+
 .item__wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
 .item {
 	max-width: 48%;
 	text-align: center;
@@ -38,10 +39,9 @@ export default {
 }
 
 @media (max-width: 575px) {
-   .item {
-        max-width: 100%;
-        margin-bottom: 15px;
-      }
+	.item {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
 }
-
 </style>

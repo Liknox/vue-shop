@@ -4,10 +4,12 @@
 	"private": true,
 	"scripts": {
 		"start": "vue-cli-service serve",
-		"build": "vue-cli-service build"
+		"build": "vue-cli-service build",
+		"format": "prettier --write \"src/**/*.@(js|ts|jsx|tsx|vue|css|scss|module.css|module.scss)\""
 	},
 	"dependencies": {
 		"core-js": "^3.8.3",
+		"prettier": "^3.0.2",
 		"swiper": "^8.3.2",
 		"vue": "^3.2.13",
 		"vue-router": "^4.1.2",

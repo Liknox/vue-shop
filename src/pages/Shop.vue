@@ -2,10 +2,9 @@
 	<div class="wrapper-content wrapper-content--fixed">
 		<section>
 			<div class="container">
-				<!-- <h1>Shop Page</h1>  -->
-            <div class="item__wrapper">
-               <shopItem v-for="product in shopList" :key="product.id" :product="product" />
-            </div>
+				<div class="item__wrapper">
+					<shopItem v-for="product in shopList" :key="product.id" :product="product" />
+				</div>
 			</div>
 		</section>
 	</div>
@@ -20,16 +19,11 @@ export default {
 	data() {
 		return {
 			shopList: null,
-         product: "",
+			product: "",
 		}
 	},
 	created() {
 		this.shopList = this.$store.getters.getShopList
-		// console.log(this.shopList)
 	},
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

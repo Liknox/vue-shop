@@ -21,8 +21,8 @@ export default {
 	data() {
 		return {
 			links: [
-				{title: "Home", url: "/"},
-				{title: "Shop", url: "/shop"},
+				{ title: "Shop", url: "/" },
+				{ title: "Home", url: "/home" },
 			],
 		}
 	},
@@ -33,6 +33,7 @@ export default {
 .navbar-link {
 	&.router-link-exact-active {
 		color: #5247e7;
+      font-weight: 700;
 	}
 }
 </style>

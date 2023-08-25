@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="product__wrapper">
 					<div class="product__slider">
-						<swiper :modules="modules" :slides-per-view="1" :space-between="50" navigation :pagination="{clickable: true}" :scrollbar="{draggable: true}" @swiper="onSwiper" @slideChange="onSlideChange">
+						<swiper :modules="modules" :slides-per-view="1" :space-between="50" navigation :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange">
 							<swiper-slide v-for="(slide, index) in product.gallery" :key="index">
 								<img :src="slide.img" :alt="slide.name" />
 							</swiper-slide>
@@ -14,7 +14,7 @@
 					<div class="product__content">
 						<h1 class="title">{{ product.title }}</h1>
 						<p>{{ product.descr }}</p>
-						<router-link class="btn btnWhite mb" to="/shop">Back To Shop</router-link>
+						<router-link class="btn btnWhite mb" to="/">Back To Shop</router-link>
 					</div>
 				</div>
 			</div>
@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import {Navigation, Pagination, Scrollbar, A11y} from "swiper"
-import {Swiper, SwiperSlide} from "swiper/vue"
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
+import { Swiper, SwiperSlide } from "swiper/vue"
 import "swiper/css"
 import "swiper/css/pagination"
 
@@ -34,12 +34,8 @@ export default {
 		SwiperSlide,
 	},
 	setup() {
-		const onSwiper = (swiper) => {
-			console.log(swiper)
-		}
-		const onSlideChange = () => {
-			console.log("slide change")
-		}
+		const onSwiper = () => {}
+		const onSlideChange = () => {}
 		return {
 			onSwiper,
 			onSlideChange,
@@ -52,10 +48,8 @@ export default {
 		}
 	},
 	created() {
-		// console.log(this.$route)
 		let id = this.$route.params.id
 		this.product = this.$store.getters.getProduct(id)
-		// console.log(this.product)
 	},
 }
 </script>

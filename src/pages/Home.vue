@@ -14,7 +14,7 @@
 					</ul>
 					<img src="../assets/img/1.png" alt="" />
 					<div>
-						<router-link class="btn btnPrimary mb" to="/shop">To the Shop</router-link>
+						<router-link class="btn btnPrimary mb" to="/">To the Shop</router-link>
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 	.github {
 		padding: 0 5px;
 		color: #494ce8;
-      font-weight: bold;
+		font-weight: bold;
 	}
 }
 @media (max-width: 400px) {
